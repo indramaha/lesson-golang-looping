@@ -67,6 +67,7 @@ Algoritma
 8	output("done")
 */
 
+/*
 package main
 
 import "fmt"
@@ -86,6 +87,7 @@ func main() {
 	}
 	fmt.Println("\ndone") // \n sebagai enter
 }
+*/
 
 //___________________________________________________________________
 /*
@@ -101,3 +103,18 @@ Algoritma
 5	endfor
 6	output("done")
 */
+
+package main
+
+import "fmt"
+
+func main() {
+	var N, iterasi int
+
+	fmt.Print("N = ")
+	fmt.Scanln(&N)
+	for iterasi = 1; iterasi <= N; iterasi++ {
+		fmt.Print(iterasi, " ")
+	}
+	fmt.Println("\ndone")
+}
