@@ -44,5 +44,24 @@ Algoritma
 6		status <- (bil1 mod 2 = 0 and bil2 mod 2 = 0) OR
 				  (bil1 mo 2 != 0 and bil2 mod 2 != 0)
 7		endwhile
-8		output("Oasangan bilangan ganjil?", bil1 mod 2 != 0 and bil 1 mod 2 != 0)
+8		output("Pasangan bilangan ganjil?", bil1 mod 2 != 0 and bil1 mod 2 != 0)
 */
+
+package main
+
+import "fmt"
+
+func main() {
+	var status bool
+	var bil1, bil2 int
+
+	fmt.Scan(&bil1, &bil2)
+	status = (bil1%2 == 0 && bil2%2 == 0) || (bil1%2 != 0 && bil2%2 != 0)
+
+	for !status {
+		fmt.Println((bil1 * bil2) % (bil1 + bil2))
+		fmt.Scan(&bil1, &bil2)
+		status = (bil1%2 == 0 && bil2%2 == 0) || (bil1%2 != 0 && bil2%2 != 0)
+	}
+	fmt.Println("Pasangan bilangan ganjil?", bil1%2 != 0 && bil1%2 != 0)
+}
