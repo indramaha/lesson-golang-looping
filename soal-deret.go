@@ -50,6 +50,22 @@ func main() {
 }
 */
 
+//___________________________________________________________________
+/*
+{REPEAT - KONDISI BERHENTI}
+Program deret
+Kamus
+	N, iterasi : integer
+Algoritma
+1	output("N = ")
+2	input(N)
+3	iterasi <- 1
+4	repeat
+5		output(iterasi)
+6		iterasi <- iterasi + 1
+7	until iterasi > N
+8	output("done")
+*/
 package main
 
 import "fmt"
