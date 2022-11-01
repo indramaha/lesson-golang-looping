@@ -32,6 +32,7 @@ Algoritma
 8	output("done")
 */
 
+/*
 package main
 
 import "fmt"
@@ -42,8 +43,29 @@ func main() {
 	fmt.Scanln(&N)
 	iterasi = 1
 	for iterasi <= N {
-		fmt.Print(iterasi)
+		fmt.Print(iterasi, " ")
 		iterasi = iterasi + 1
 	}
-	fmt.Println("done")
+	fmt.Println("\ndone") // \n adalah enter
+}
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+	var N, iterasi int
+
+	fmt.Print("N = ")
+	fmt.Scanln(&N)
+	iterasi = 1
+	for {
+		fmt.Print(iterasi, " ")
+		iterasi = iterasi + 1
+		if iterasi > N { // dengan repeat-until
+			break
+		}
+	}
+	fmt.Println("\ndone") // \n sebagai enter
 }
