@@ -45,3 +45,19 @@ Algoritma
 6	endwhile
 7	output("Bilangan positif: ", positif)
 */
+
+package main
+
+import "fmt"
+
+func main() {
+	var nilai, positif int
+	positif = 0
+	fmt.Scanln(&nilai)
+	// WHILE nilai >= 0 DO
+	for nilai >= 0 {
+		positif = positif + 1
+		fmt.Scanln(&nilai)
+	}
+	fmt.Println("Bilangan Positif: ", positif)
+}
