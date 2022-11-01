@@ -66,6 +66,7 @@ Algoritma
 7	until iterasi > N
 8	output("done")
 */
+
 package main
 
 import "fmt"
@@ -85,3 +86,18 @@ func main() {
 	}
 	fmt.Println("\ndone") // \n sebagai enter
 }
+
+//___________________________________________________________________
+/*
+{FOR - JUMLAH ITERASINYA}
+Program deret
+Kamus
+	N, iterasi : integer
+Algoritma
+1	output("N = ")
+2	input(N)
+3	for iterasi <- 1 to N do
+4		output(iterasi)
+5	endfor
+6	output("done")
+*/
