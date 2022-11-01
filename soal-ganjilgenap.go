@@ -28,3 +28,21 @@ ______________________________________________________________________
 | Secara matematik genap apabila bilangan mod 2 = 0. dan sebaliknay ganjil.
 ______________________________________________________________________
 */
+
+/*
+Program Ganjilgenap
+Kamus
+	Status	: boolean
+	bil1, bil2 : integer
+Algoritma
+1	input(bil1, bil2)
+2	status <- (bil1 mod 2 = 0 and bil2 mod 2 = 0) OR
+			  (bil1 mod 2 != 0 and bil2 mod 2 != 0)
+3	while not status do
+4		output( (bil1 x bil2) mod (bil1 + bil2) )
+5		input(bil1, bil2)
+6		status <- (bil1 mod 2 = 0 and bil2 mod 2 = 0) OR
+				  (bil1 mo 2 != 0 and bil2 mod 2 != 0)
+7		endwhile
+8		output("Oasangan bilangan ganjil?", bil1 mod 2 != 0 and bil 1 mod 2 != 0)
+*/
